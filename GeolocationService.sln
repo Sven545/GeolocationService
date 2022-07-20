@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeolocationService.PresentationLayer", "GeolocationService.PresentationLayer\GeolocationService.PresentationLayer.csproj", "{242C0BAE-FA77-4B1D-BB51-2DB21950D640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeolocationServire.BusinessLogicLayer", "GeolocationServire.BusinessLogicLayer\GeolocationServire.BusinessLogicLayer.csproj", "{0D1F2C16-1FEB-4E27-9952-F305CE9C606B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{242C0BAE-FA77-4B1D-BB51-2DB21950D640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242C0BAE-FA77-4B1D-BB51-2DB21950D640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242C0BAE-FA77-4B1D-BB51-2DB21950D640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242C0BAE-FA77-4B1D-BB51-2DB21950D640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D1F2C16-1FEB-4E27-9952-F305CE9C606B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1F2C16-1FEB-4E27-9952-F305CE9C606B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1F2C16-1FEB-4E27-9952-F305CE9C606B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1F2C16-1FEB-4E27-9952-F305CE9C606B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {388CB95E-9DE8-4D00-8ABF-96F83BBFE406}
+	EndGlobalSection
+EndGlobal

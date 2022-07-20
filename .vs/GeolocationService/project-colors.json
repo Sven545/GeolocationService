@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "17327bab-fc74-4183-b660-679ec715359b": {
+      "ProjectGuid": "17327bab-fc74-4183-b660-679ec715359b",
+      "DisplayName": "GeolocationService",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
