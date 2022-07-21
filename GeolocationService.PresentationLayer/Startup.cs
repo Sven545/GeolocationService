@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using System.Net.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -34,7 +35,11 @@ namespace GeolocationService.PresentationLayer
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GeolocationService.PresentationLayer", Version = "v1" });
             });
+
+            services.AddSingleton<HttpClient>();
             services.AddTransient<IAddressToLocation, NominatimService>();
+            services.AddTransient<ILocationToAddress, DadataService>();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

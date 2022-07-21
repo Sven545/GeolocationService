@@ -10,3 +10,15 @@ C:\Users\User\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLog
 C:\Users\User\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.dll
 C:\Users\User\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\ref\GeolocationServire.BusinessLogicLayer.dll
 C:\Users\User\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.pdb
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\bin\Debug\net5.0\GeolocationServire.BusinessLogicLayer.deps.json
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\bin\Debug\net5.0\GeolocationServire.BusinessLogicLayer.dll
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\bin\Debug\net5.0\ref\GeolocationServire.BusinessLogicLayer.dll
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\bin\Debug\net5.0\GeolocationServire.BusinessLogicLayer.pdb
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.dll
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\ref\GeolocationServire.BusinessLogicLayer.dll
+C:\Users\Александр\Desktop\Projects\GeolocationService\GeolocationServire.BusinessLogicLayer\obj\Debug\net5.0\GeolocationServire.BusinessLogicLayer.pdb

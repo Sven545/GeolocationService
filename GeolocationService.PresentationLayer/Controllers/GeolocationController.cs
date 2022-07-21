@@ -27,14 +27,14 @@ namespace GeolocationService.PresentationLayer.Controllers
             );
             _mapper = new Mapper(mapperConfig);
         }
-
+        /*
         [HttpGet]
         public IActionResult GetAddress(LocationModel geodataModel)
         {
             return View();
         }
-
-        [HttpGet]
+        */
+        [HttpPost]
         public IActionResult GetGeodata(AddressModel addressModel)
         {
            
@@ -42,9 +42,13 @@ namespace GeolocationService.PresentationLayer.Controllers
             try
             {
                 var addressDTO = _mapper.Map<AddressModel, AddressDTO>(addressModel);
-                var locationDTO = _addressToLocationService.GetLocation(addressDTO);
-                var locationModel = _mapper.Map<LocationDTO, LocationModel>(locationDTO);
-                return Ok(locationModel);
+            var locationDTO = _addressToLocationService.GetLocationAsync(addressDTO);
+            var locationModel = _mapper.Map<LocationDTO, LocationModel>(locationDTO);
+            return Ok(locationModel);
+            }
+            catch(ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
             }
             catch (Exception)
             {

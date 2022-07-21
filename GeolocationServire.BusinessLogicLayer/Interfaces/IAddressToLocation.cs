@@ -9,6 +9,6 @@ namespace GeolocationServire.BusinessLogicLayer.Interfaces
 {
     public interface IAddressToLocation
     {
-        LocationDTO GetLocation(AddressDTO address);
+        LocationDTO GetLocationAsync(AddressDTO address);
     }
 }
