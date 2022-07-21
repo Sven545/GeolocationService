@@ -14,6 +14,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using GeolocationServire.BusinessLogicLayer.Interfaces;
 using GeolocationServire.BusinessLogicLayer.Services;
+using System.IO;
+using GeolocationService.PresentationLayer.Middlewares;
 
 namespace GeolocationService.PresentationLayer
 {
@@ -26,7 +28,7 @@ namespace GeolocationService.PresentationLayer
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+      
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -42,21 +44,22 @@ namespace GeolocationService.PresentationLayer
            
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+       
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILoggerFactory loggerFactory)
         {
+            app.UseMiddleware<RequestResponseConsoleLoggingMiddleware>();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GeolocationService.PresentationLayer v1"));
+                
+                //loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logs"));
             }
-
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-           // app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

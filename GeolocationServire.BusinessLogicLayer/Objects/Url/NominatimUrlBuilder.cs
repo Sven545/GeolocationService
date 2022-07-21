@@ -49,7 +49,7 @@ namespace GeolocationServire.BusinessLogicLayer.Objects.Url
            
             return url;
         }
-        public static NominatimUrl AddHouse(this NominatimUrl url, int house)
+        public static NominatimUrl AddHouse(this NominatimUrl url, string house)
         {
             if(!url.HouseIsAdded&&url.StreetIsAdded)
             {

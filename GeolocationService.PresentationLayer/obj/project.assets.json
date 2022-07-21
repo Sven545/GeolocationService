@@ -34,6 +34,15 @@
           "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
         }
       },
+      "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "type": "package",
         "compile": {
@@ -221,6 +230,27 @@
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
       ]
     },
+    "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
+      "sha512": "uyjY/cqomw1irT4L7lDeg4sJ36MsjHg3wKqpGrBAdzvZaxo85yMF+sAA9RIzTV92fDxuUzjqksMqA0+SNMkMgA==",
+      "type": "package",
+      "path": "microsoft.io.recyclablememorystream/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/net462/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netcoreapp2.1/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netcoreapp2.1/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.xml",
+        "microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512",
+        "microsoft.io.recyclablememorystream.nuspec"
+      ]
+    },
     "Microsoft.OpenApi/1.2.3": {
       "sha512": "Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "type": "package",
@@ -311,23 +341,24 @@
     "net5.0": [
       "AutoMapper >= 11.0.1",
       "GeolocationServire.BusinessLogicLayer >= 1.0.0",
+      "Microsoft.IO.RecyclableMemoryStream >= 2.2.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Александр\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationService.PresentationLayer\\GeolocationService.PresentationLayer.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationService.PresentationLayer\\GeolocationService.PresentationLayer.csproj",
       "projectName": "GeolocationService.PresentationLayer",
-      "projectPath": "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationService.PresentationLayer\\GeolocationService.PresentationLayer.csproj",
-      "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationService.PresentationLayer\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationService.PresentationLayer\\GeolocationService.PresentationLayer.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationService.PresentationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -341,8 +372,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj": {
-              "projectPath": "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj"
+            "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj"
             }
           }
         }
@@ -360,6 +391,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[11.0.1, )"
+          },
+          "Microsoft.IO.RecyclableMemoryStream": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

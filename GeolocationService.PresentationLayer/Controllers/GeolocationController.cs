@@ -4,6 +4,7 @@ using GeolocationService.PresentationLayer.ViewModels;
 using System;
 using AutoMapper;
 using GeolocationServire.BusinessLogicLayer.DataTransferObjects;
+using System.Collections.Generic;
 
 namespace GeolocationService.PresentationLayer.Controllers
 {
@@ -14,9 +15,9 @@ namespace GeolocationService.PresentationLayer.Controllers
         private ILocationToAddress _locationToAddressService;
         private IAddressToLocation _addressToLocationService;
         private Mapper _mapper;
-        public GeolocationController(/*ILocationToAddress locationToAddressService,*/ IAddressToLocation addressToLocationService)
+        public GeolocationController(ILocationToAddress locationToAddressService, IAddressToLocation addressToLocationService)
         {
-            //_locationToAddressService = locationToAddressService;
+            _locationToAddressService = locationToAddressService;
             _addressToLocationService = addressToLocationService;
 
             var mapperConfig = new MapperConfiguration(config =>
@@ -27,26 +28,43 @@ namespace GeolocationService.PresentationLayer.Controllers
             );
             _mapper = new Mapper(mapperConfig);
         }
-        /*
-        [HttpGet]
-        public IActionResult GetAddress(LocationModel geodataModel)
-        {
-            return View();
-        }
-        */
+
         [HttpPost]
+        [Route("reverse")]
+        public IActionResult Get10Addresses(LocationModel locationModel)
+        {
+            try
+            {
+                var locationDTO = _mapper.Map<LocationModel, LocationDTO>(locationModel);
+                var addressesDTO = _locationToAddressService.GetAddressesAsync(locationDTO, 10);
+                var addressesModel = _mapper.Map<IEnumerable<AddressDTO>, IEnumerable<AddressModel>>(addressesDTO);
+                return Ok(addressesModel);
+            }
+            catch (ArgumentException ex)
+            {
+                return NoContent();
+            }
+            catch (Exception)
+            {
+                return Problem("Something wrong");
+            }
+
+        }
+
+        [HttpPost]
+        [Route("search")]
         public IActionResult GetGeodata(AddressModel addressModel)
         {
-           
+
 
             try
             {
                 var addressDTO = _mapper.Map<AddressModel, AddressDTO>(addressModel);
-            var locationDTO = _addressToLocationService.GetLocationAsync(addressDTO);
-            var locationModel = _mapper.Map<LocationDTO, LocationModel>(locationDTO);
-            return Ok(locationModel);
+                var locationDTO = _addressToLocationService.GetLocationAsync(addressDTO);
+                var locationModel = _mapper.Map<LocationDTO, LocationModel>(locationDTO);
+                return Ok(locationModel);
             }
-            catch(ArgumentException ex)
+            catch (ArgumentException ex)
             {
                 return BadRequest(ex.Message);
             }

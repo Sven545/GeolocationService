@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Александр\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj",
       "projectName": "GeolocationServire.BusinessLogicLayer",
-      "projectPath": "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj",
-      "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Александр\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\GeolocationServire.BusinessLogicLayer.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Projects\\GeolocationService\\GeolocationServire.BusinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

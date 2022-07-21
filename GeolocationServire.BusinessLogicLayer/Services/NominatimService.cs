@@ -19,7 +19,7 @@ namespace GeolocationServire.BusinessLogicLayer.Services
         public NominatimService(HttpClient client)
         {
             _client = client;
-            client.DefaultRequestHeaders.Add("user-agent", "GeolocationService");
+            
 
             _jsonSerializerOptions = new JsonSerializerOptions
             {
@@ -51,6 +51,10 @@ namespace GeolocationServire.BusinessLogicLayer.Services
         }
         private async Task<LocationDTO> GetLocation(AddressDTO address)
         {
+            
+            _client.DefaultRequestHeaders.Clear();
+            _client.DefaultRequestHeaders.Add("user-agent", "GeolocationService");
+
             NominatimUrl url = new NominatimUrl()
                 .AddEndpoint("search")
                 .AddCountry(address.Country)
@@ -66,8 +70,8 @@ namespace GeolocationServire.BusinessLogicLayer.Services
 
             var location = locations.FirstOrDefault() ?? throw new ArgumentException("No data for this address");
             return location;
-
-
+            
+            
         }
 
     }
