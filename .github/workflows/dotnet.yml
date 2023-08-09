@@ -32,3 +32,12 @@ jobs:
         name: instructors
         path: instructors/**
         if-no-files-found: error
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@master
+      with:
+        host: 212.233.88.232
+        username: "debian"
+        key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDLYfK8r+v7mbV1g+NwMcbjvN2cyohpVwv46b/ndFMLPZsjtJbuHolLfUiL5j8zK0O1GWye+TijivCD5P6Qd2B5WVjzALGokXTVrIDo54DUYXOGWYI0ZMg4x36CBLT16NlyF5xz94mx+8rebYJITP81bilb8QryrtPv+D8vauqeDiBmw7NfD+b9NcsHs2tzwEbY4wxhjGAxHng5xU2EL7rFyyZ8K8VkvWAviFpuZZ4lQYgJD6xZAUBpfnS/ElQ2ks/OiT7khwNjV2b70qBrPbAIVhwuZ+64HhB386Kt+aRrDYei9G+p9rpFa7iTdWGT3V8v6dAIuVQgLwMMhWYYhpkAg45/54VEqm9yWqYyLBEb59Sdb1yRE2Bzg0kt8UYSHqsbpUvJgGee5qXVeBT2mdXHZE1V1JW7jfd5LlT6hgHQL29NKYZflzYRFJxCI7coyIvwqDPRbP2iiw/b5UuBq6PNzU2N1RJY4eWhZ73KJhDPigpMmCq4JHO4sVhdk2eZhx0= debian@debian11"
+        port: 22
+        source: "..instructors/*"
+        target: "/home/debian/jjj"
