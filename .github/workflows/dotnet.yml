@@ -39,5 +39,6 @@ jobs:
         host: 212.233.88.232
         username: "debian"
         port: 22
+        key: ${{ secrets.KEY }}
         source: "instructors"
         target: "/home/debian/jjj"
